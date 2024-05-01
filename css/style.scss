@@ -1,0 +1,233 @@
+/* d:/Arafat/html/CSN Extra/css/style.css */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #6A6FF9;
+    --secondary-color: #334155;
+    --gray-100: #F3F4F6;
+    --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-600: #475569;
+    --gray-900: #111827;
+    --lime-500: #84CC16;
+    --amber-400: #FFE64A;
+    --amber-500: #F59E0B;
+    --red-500: #EF4444;
+    --primary-font: "Poppins", sans-serif;
+}
+
+// Universal CSS 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    background-color: var(--gray-100);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+::placeholder {
+    color: var(--gray-300) !important;
+}
+
+// ///////////////////
+// Custom CSS
+// ///////////////////
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.text-gray-100 {
+    color: var(--gray-100) !important;
+}
+
+.text-gray-300 {
+    color: var(--gray-300) !important;
+}
+
+.text-gray-400 {
+    color: var(--gray-400) !important;
+}
+
+.text-gray-500 {
+    color: var(--gray-500) !important;
+}
+
+.text-gray-600 {
+    color: var(--gray-600) !important;
+}
+
+.text-gray-900 {
+    color: var(--gray-900) !important;
+}
+
+.text-lime-500 {
+    color: var(--lime-500) !important;
+}
+
+.text-amber-400 {
+    color: var(--amber-400) !important;
+}
+
+.text-amber-500 {
+    color: var(--amber-500) !important;
+}
+
+.text-red-500 {
+    color: var(--red-500) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-gray-900 {
+    background-color: var(--gray-900) !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+    transition: 0.3s all;
+}
+
+// ///////////////////
+// Login Page
+// ///////////////////
+
+.login {
+    overflow: hidden;
+    background-color: var(--white);
+    height: 100%;
+
+    .login-img {
+        background-image: url("../assets/images/login.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        padding-top: 120px;
+        text-align: center;
+        color: var(--amber-400);
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        border-right: 1px solid var(--gray-300);
+
+        form {
+            input {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+// ///////////////////
+// End Login Page
+// ///////////////////
+
+// //////////////////
+// Dashboard CSS
+// //////////////////
+.sidebar {
+    display: inline-flex;
+    height: 100vh;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex-shrink: 0;
+    background-color: var(--white);
+
+    ul {
+        padding: 0;
+        li {
+            display: flex;
+            justify-content: space-between;
+            width: 240px;
+            padding: 12px 0px;
+            align-items: center;
+            a{
+                color: var(--gray-400);
+                img{
+                    background-color: var(--gray-100);
+                    padding: 8px;
+                    border-radius: 12px;
+                }
+                span{
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; 
+                    padding-left: 10px;
+                }
+                .arrow{
+                    background-color: transparent;
+                    padding-left: 100px;
+                }
+            }
+        }
+    }
+}
+
+.info-table{
+    ul{
+        li{
+            width: 100%;
+            &:hover{
+                background-color: var(--gray-100);
+                cursor: pointer;
+            }
+        }
+
+    }
+}
