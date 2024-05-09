@@ -47,6 +47,8 @@ input[type=text]:focus,
 input[type=password]:focus,
 input[type=email]:focus,
 input[type=number]:focus,
+input[type=date]:focus,
+input[type=file]:focus,
 textarea:focus,
 select:focus {
   outline: none;
@@ -59,6 +61,10 @@ select:focus {
 
 ::placeholder {
   color: var(--gray-300) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
 .text-primary {
@@ -119,6 +125,14 @@ select:focus {
 
 .btn-primary {
   background-color: var(--primary-color) !important;
+}
+
+.bg-gray-400 {
+  background-color: var(--gray-400);
+}
+
+.bg-gray-600 {
+  background-color: var(--gray-600);
 }
 
 .bg-gray-900 {
@@ -207,4 +221,34 @@ select:focus {
 .info-table ul li:hover {
   background-color: var(--gray-100);
   cursor: pointer;
+}
+.info-table .tabs .tab a {
+  display: block;
+  color: var(--gray-500);
+  padding-bottom: 15px;
+  border-bottom: 2px solid transparent;
+}
+.info-table .tabs .tab a:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+.info-table .tabs .tab .active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.wallet .wallet-header a {
+  color: var(--gray-500);
+}
+.wallet .wallet-header .active {
+  background-color: #DEE6FF !important;
+  color: var(--primary-color) !important;
+}
+.wallet .wallet-balance {
+  background-image: url(../assets/images/wallet.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

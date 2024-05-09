@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-white py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo ms-3">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <div class="profile">
+                <img src="assets/images/user-photo.png" alt="Profile Image" class="rounded-circle"
+                    style="width: 40px; height: 40px;">
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-2">
+            <aside class="container-fluid p-0">
+                <section class="sidebar">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/dashboard.svg" alt="">
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/wholesaler.svg" alt="">
+                                    <span>Wholesaler</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/wallet.svg" alt="">
+                                    <span>Wallet</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/report.svg" alt="">
+                                    <span>Report</span>
+                                    <img class="arrow" src="assets/icons/arrow-down.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </section>
+            </aside>
+        </div>
+        <div class="col-md-10 p-4">
+            <main>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">
+                                <img src="assets/icons/home.svg" alt="">
+                            </a></li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">Wholesaler</li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">New Wholesaler</li>
+                    </ol>
+                </nav>
+                <div class="form">
+                    <div class="form-header">
+                        <div class="card border-0 rounded shadow-sm py-2">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <div class="d-flex">
+                                        <span style="padding: 8px 12px;"
+                                            class="badge bg-primary rounded-circle fw-normal">1</span>
+                                        <span class="ms-3 pt-1 d-block">Shop Details</span>
+                                        <div class="border-bottom border-2 ms-4"
+                                            style="width: 400px;  margin-bottom: 10px;"></div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span style="padding: 8px 12px;"
+                                            class="badge bg-gray-400 rounded-circle fw-normal">2</span>
+                                        <span class="ms-3 pt-1 d-block text-gray-400">Company Details</span>
+                                        <div class="border-bottom border-2 ms-4"
+                                            style="width: 400px;  margin-bottom: 10px;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <span style="padding: 8px 12px;"
+                                            class="badge bg-gray-400 rounded-circle fw-normal">3</span>
+                                        <span class="ms-3 pt-1 d-block text-gray-400">Review Information</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-body mt-4">
+                        <div class="first-page">
+                            <div class="shop-info card border-0 shadow-sm p-4">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h5>Shop Information</h5>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">Name</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="Moshe">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">Surname</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="Shop">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Tax code(CF)</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="Shop">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Gender</label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Date of Birth</label>
+                                                    <input class="form-control px-3 py-2" type="date" placeholder="Shop">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Country of Birth</label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Italy">Italy</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">City of Birth</label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Italy">Italy</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+    <header class="container-fluid bg-white py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo ms-3">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <div class="profile">
+                <img src="assets/images/user-photo.png" alt="Profile Image" class="rounded-circle"
+                    style="width: 40px; height: 40px;">
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-2">
+            <aside class="container-fluid p-0">
+                <section class="sidebar">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/dashboard.svg" alt="">
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/wholesaler.svg" alt="">
+                                    <span>Wholesaler</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/wallet.svg" alt="">
+                                    <span>Wallet</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/report.svg" alt="">
+                                    <span>Report</span>
+                                    <img class="arrow" src="assets/icons/arrow-down.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </section>
+            </aside>
+        </div>
+        <div class="col-md-10 p-4">
+            <main class="wallet">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">
+                                <img src="assets/icons/home.svg" alt="">
+                            </a></li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">Wallet</li>
+
+                    </ol>
+                </nav>
+
+                <div class="card border-0 rounded shadow-sm wallet-header">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-start align-items-end">
+                            <div class="col d-flex">
+                                <a class="me-3 p-2 active px-3 rounded-5" href="">
+                                    Admin
+                                </a>
+                                <a class="p-2 rounded-5 px-3" href="">
+                                    Wholesaler
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-info mt-3 ">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card border-0 rounded shadow-sm">
+                                <div class="card-body">
+                                    <div class="overview">
+                                        <div class="card-header border-0 bg-white">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Sale Overview</h5>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-light dropdown-toggle rounded-5 px-3"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        This Month
+                                                    </button>
+                                                    <ul class="dropdown-menu border-0 shadow-sm">
+                                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                                        <li><a class="dropdown-item" href="#">Last Month</a></li>
+                                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                                        <li><a class="dropdown-item" href="#">Last Year</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="dashboard-table mt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h5>Last Transactions</h5>
+                                    <a href="#" class="text-primary text-decoration-none">View All</a>
+                                </div>
+                                <div class="card border-0 rounded-3 shadow-sm mt-4">
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Method</th>
+                                                    <th scope="col">Debit</th>
+                                                    <th scope="col">Credit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i style="font-size: 12px; padding: 3px 5px;" class="bi bi-arrow-down-right bg-primary text-white rounded-circle"></i>
+                                                    </td>
+                                                    <td> 21/12/2023 </td>
+                                                    <td> CSNT36583 </td>
+                                                    <td> Ripon </td>
+                                                    <td> Card </td>
+                                                    <td></td>
+                                                    <td> 
+                                                        <span class="text-success">+</span> €60.5 
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i  style="font-size: 12px; padding: 3px 5px;" class="bi bi-arrow-up-left bg-danger text-white rounded-circle"></i>
+                                                    </td>
+                                                    <td> 21/12/2023 </td>
+                                                    <td> CSNT36583 </td>
+                                                    <td> Ripon </td>
+                                                    <td> Card </td>
+                                                    <td>
+                                                        <span class="text-danger">-</span> €60.5 
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 rounded-3 shadow-sm">
+                                <div class="card-body p-0">
+                                    <div class="wallet-balance p-4 text-white">
+                                        <p class="fw-normal">Available Balance</p>
+                                        <h4 class="fw-bolder">€3,265.75</h4>
+                                        <h5 class="mt-5 fw-normal">**** **** **** 2255</h5>
+                                        <h6 class="d-flex justify-content-start fw-normal mt-4">
+                                            <div class="me-5">
+                                                MOSHE SHOP
+                                            </div>
+                                            <div class="ms-3">
+                                                4/19
+                                            </div>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 rounded-3 shadow-sm mt-4">
+                                <div class="card-body">
+                                    <div class="card-header border-0 bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Today's Sale</h6>
+                                            <div>
+                                                <span class="badge bg-primary rounded-5">
+                                                    +5%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bolder">
+                                            €1,265.75
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 rounded-3 shadow-sm mt-4">
+                                <div class="card-body">
+                                    <div class="card-header border-0 bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Last Month Sale</h6>
+                                            <div>
+                                                <span class="badge bg-danger rounded-5 ">
+                                                    +5%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bolder">
+                                            €4,267.55
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 rounded-3 shadow-sm mt-4">
+                                <div class="card-body">
+                                    <div class="card-header border-0 bg-white">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Last Withdrawn</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bolder">
+                                            €2,900.00
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: Array.from({ length: 20 }, (_, i) => `${i + 1}`),
+                datasets: [{
+                    label: 'This Month Sales',
+                    data: Array.from({ length: 20 }, () => Math.floor(Math.random() * 100000)),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(106, 111, 249, 1)',
+                    borderWidth: 3,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 10000
+                        }
+                    }
+                },
+                elements: {
+                    point: {
+                        radius: 0
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        enabled: true
+                    },
+                    legend: {
+                        display: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

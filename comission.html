@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-white py-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo ms-3">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
+            <div class="profile">
+                <img src="assets/images/user-photo.png" alt="Profile Image" class="rounded-circle"
+                    style="width: 40px; height: 40px;">
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-2">
+            <aside class="container-fluid p-0">
+                <section class="sidebar">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/dashboard.svg" alt="">
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/wholesaler.svg" alt="">
+                                    <span>Wholesaler</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/wallet.svg" alt="">
+                                    <span>Wallet</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/icons/report.svg" alt="">
+                                    <span>Report</span>
+                                    <img class="arrow" src="assets/icons/arrow-down.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </section>
+            </aside>
+        </div>
+        <div class="col-md-10 p-4">
+            <main>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">
+                                <img src="assets/icons/home.svg" alt="">
+                            </a></li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">Wholesaler</li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">Details</li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">MR Assistenza</li>
+                        <li class="breadcrumb-item text-gray-500 pt-1 ms-1" aria-current="page">Comission</li>
+                    </ol>
+                </nav>
+
+                <div class="card rounded-top border-0">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="col">
+                                <h5>Services</h5>
+                            </div>
+                            <div class="col">
+                                <form action="" method="get">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-text bg-white">
+                                            <img src="assets/icons/search.svg" alt="Search">
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-table bg-white p-4 table-responsive">
+                    <table class="table table-borderless">
+                        <thead class="table-light border">
+                            <tr>
+                                <th class="text-gray-500 fw-bold p-3 pe-0">Logo</th>
+                                <th class="text-gray-500 p-3">Service Name</th>
+                                <th class="text-gray-500 p-3">Buying Price</th>
+                                <th class="text-gray-500 p-3">Selling Price</th>
+                                <th class="text-gray-500 p-3">Comission</th>
+                                <th class="text-gray-500 p-3 pe-0 text-end">Profit</th>
+                                <th colspan="2"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="border-start border-end">
+                            <tr class="align-middle border-bottom">
+                                <td>
+                                    <img src="assets/images/user-photo.png" alt="user" class="rounded-circle" />
+                                </td>
+                                <td class="text-gray-500">Service Name Goes Here </td>
+                                <td class="text-gray-500">€8</td>
+                                <td class="text-gray-500">€15</td>
+                                <td class="text-gray-500">€3.5</td>
+                                <td class="text-gray-500 text-end">€3.5</td>
+                                <td>
+                                    <span data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="cursor-pointer"
+                                        style="background-color: #EDF2FF; padding: 5px 10px; border-radius: 12px; color: var(--primary-color);">
+                                        <i style="font-weight: 500;" class="bi bi-pencil-square"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="align-middle border-bottom">
+                                <td>
+                                    <img src="assets/images/user-photo.png" alt="user" class="rounded-circle" />
+                                </td>
+                                <td class="text-gray-500">Service Name Goes Here </td>
+                                <td class="text-gray-500">€8</td>
+                                <td class="text-gray-500">€15</td>
+                                <td class="text-gray-500">€3.5</td>
+                                <td class="text-gray-500 text-end">€3.5</td>
+                                <td>
+                                    <span data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="cursor-pointer"
+                                        style="background-color: #EDF2FF; padding: 5px 10px; border-radius: 12px; color: var(--primary-color);">
+                                        <i style="font-weight: 500;" class="bi bi-pencil-square"></i>
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="align-middle border-bottom">
+                                <td>
+                                    <img src="assets/images/user-photo.png" alt="user" class="rounded-circle" />
+                                </td>
+                                <td class="text-gray-500">Service Name Goes Here </td>
+                                <td class="text-gray-500">€8</td>
+                                <td class="text-gray-500">€15</td>
+                                <td class="text-gray-500">€3.5</td>
+                                <td class="text-gray-500 text-end">€3.5</td>
+                                <td>
+                                    <span data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="cursor-pointer"
+                                        style="background-color: #EDF2FF; padding: 5px 10px; border-radius: 12px; color: var(--primary-color);">
+                                        <i style="font-weight: 500;" class="bi bi-pencil-square"></i>
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="align-middle border-bottom">
+                                <td>
+                                    <img src="assets/images/user-photo.png" alt="user" class="rounded-circle" />
+                                </td>
+                                <td class="text-gray-500">Service Name Goes Here </td>
+                                <td class="text-gray-500">€8</td>
+                                <td class="text-gray-500">€15</td>
+                                <td class="text-gray-500">€3.5</td>
+                                <td class="text-gray-500 text-end">€3.5</td>
+                                <td>
+                                    <span data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="cursor-pointer"
+                                        style="background-color: #EDF2FF; padding: 5px 10px; border-radius: 12px; color: var(--primary-color);">
+                                        <i style="font-weight: 500;" class="bi bi-pencil-square"></i>
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="align-middle border-bottom">
+                                <td>
+                                    <img src="assets/images/user-photo.png" alt="user" class="rounded-circle" />
+                                </td>
+                                <td class="text-gray-500">Service Name Goes Here </td>
+                                <td class="text-gray-500">€8</td>
+                                <td class="text-gray-500">€15</td>
+                                <td class="text-gray-500">€3.5</td>
+                                <td class="text-gray-500 text-end">€3.5</td>
+                                <td>
+                                    <span data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="cursor-pointer"
+                                        style="background-color: #EDF2FF; padding: 5px 10px; border-radius: 12px; color: var(--primary-color);">
+                                        <i style="font-weight: 500;" class="bi bi-pencil-square"></i>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 justify-content-between">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Commission</h1>
+                    <div style="width: 20px; height: 20px;" class="bg-secondary text-white rounded-circle d-flex justify-content-center align-items-center cursor-pointer" data-bs-dismiss="modal" aria-label="Close">
+                        <i style="font-size: 10px;" class="bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <label for="comission" class="form-label fw-normal">Buying Price</label>
+                            <input type="text" class="form-control" id="comission" placeholder="€8">
+                        </div>
+                        <div class="col-6 mb-4">
+                            <label for="comission" class="form-label fw-normal">Selling Price</label>
+                            <input type="text" class="form-control" id="comission" placeholder="€8">
+                        </div>
+                        <div class="col-6">
+                            <label for="comission" class="form-label fw-normal">Commission</label>
+                            <input type="text" class="form-control" id="comission" placeholder="€8">
+                        </div>
+                        <div class="col-6">
+                            <label for="comission" class="form-label fw-normal">Profit</label>
+                            <input type="text" class="form-control" id="comission" placeholder="€8" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-start border-0">
+                    <button type="button" class="btn btn-primary px-5">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="libs/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
