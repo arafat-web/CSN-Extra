@@ -108,10 +108,10 @@
 
                     <div class="form-body mt-4">
                         <div class="first-page">
-                            <div class="shop-info card border-0 shadow-sm p-4">
-                                <div class="row">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="row shop-info">
                                     <div class="col-3">
-                                        <h5>Shop Information</h5>
+                                        <h5 class="fw-bold">Shop Information</h5>
                                     </div>
                                     <div class="col-9">
                                         <div class="row">
@@ -179,10 +179,381 @@
                                                 </div>
                                             </div>
 
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Citizenship <span class="text-danger">*</span></label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Italy">Italy</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Telephone Number</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="+19196134718">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Mobile Number</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="+13516456787">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Email</label>
+                                                    <input class="form-control px-3 py-2" type="email" placeholder="shop_00@example.com">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row address-info mt-4 pt-4" style="border-top: 1px dashed gray;">
+                                    <div class="col-3">
+                                        <h5 class="fw-bold">Address Information</h5>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">Residence Address <span class="text-danger">*</span></label>
+                                                    <textarea class="form-control" name="" id="" placeholder="86737 Steuber Crescent Suite 012New Mozelle, UT 00442-8898"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">Civic No <span class="text-danger">*</span></label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="9">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Province of Residence <span class="text-danger">*</span></label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Bangladesh">Bangladesh</option>
+                                                        <option value="Italy">Italy</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">City of Residence <span class="text-danger">*</span></label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Postal Code <span class="text-danger">*</span></label>
+                                                   <input type="text" class="form-control px-3 py-2" placeholder="82458-2430">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card border-0 shadow-sm mt-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn bg-light fw-bold px-5 py-2">Back</button>
+                                        <a href="login.html" class="btn btn-primary fw-bold px-5 py-2">Next</a>   
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="second-page">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="row address-info">
+                                    <div class="col-3">
+                                        <h5 class="fw-bold">Company Information</h5>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">Company Type</label>
+                                                    <select class="form-select px-3 py-2" >
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Private">Private</option>
+                                                        <option value="Public">Public</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">VAT Number</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="29312177">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Company Name</label>
+                                                    <input class="form-control px-3 py-2" type="text" placeholder="Hansen Pvt Ltd.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row address-info mt-4 pt-4" style="border-top: 1px dashed gray;">
+                                    <div class="col-3">
+                                        <h5 class="fw-bold">Address Information</h5>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-normal">Company Address <span class="text-danger">*</span></label>
+                                                    <textarea class="form-control" name="" id="" placeholder="43746 Jana RueSouth Victorside, MI 26450"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Company Province <span class="text-danger">*</span></label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Company City <span class="text-danger">*</span></label>
+                                                    <select name="" class="form-select px-3 py-2" id="">
+                                                        <option selected disabled>Select an Option</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Business Phone <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control px-3 py-2" name="" id="" placeholder="+17864160963">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Business Mobile <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control px-3 py-2" name="" id="" placeholder="+13084563276">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mt-4">
+                                                    <label class="form-label fw-normal">Company Email <span class="text-danger">*</span></label>
+                                                  <input type="email" class="form-control px-3 py-2" name="" id="" placeholder="mkoepp@gamill.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 shadow-sm mt-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn bg-light fw-bold px-5 py-2">Back</button>
+                                        <a href="login.html" class="btn btn-primary fw-bold px-5 py-2">Next</a>   
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+
+                        <div class="third-page">
+                            <div class="card border-0 shadow-sm p-4">
+                                <div class="row address-info">
+                                    <div class="col-3">
+                                        <h5 class="fw-bold">Shop Details</h5>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Operators Name</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="Arafat Hossain" readonly>       
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group mb-3">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Cell Number</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="+12517918588" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Tax Code (CF)</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Gender</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">City of Birth</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Country of Birth</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Citizenship</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Telephone Number</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3" style="border: 1px dashed rgb(190, 190, 190);"></div>
+                                            <div class="col-6 mb-3" >
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Address</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Province of Residence</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">City of Residence</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Postal Code</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row address-info mt-4 pt-4" style="border-top: 1px dashed gray;">
+                                    <div class="col-3">
+                                        <h5 class="fw-bold">Company Details</h5>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Compnay Name</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="Arafat Hossain" readonly>       
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group mb-3">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Company Type</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="+12517918588" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Vat ID</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Business Phone</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Business Mobile Phone</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Business Email</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-3" style="border: 1px dashed rgb(190, 190, 190);"></div>
+                                            <div class="col-6 mb-3" >
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Address</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">Province of Residence</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <div class="form-group">
+                                                    <label class="form-label form-label text-gray-400 mb-0">City of Residence</label>
+                                                    <input class="form-control border-0 ps-0" type="text" value="VAxzaRmYbIPcUY8L" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 shadow-sm mt-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn bg-light fw-bold px-5 py-2">Back</button>
+                                        <a href="login.html" class="btn btn-primary fw-bold px-5 py-2">Next</a>   
+                                    </div>
+                                </div>
+                             </div>
                         </div>
                     </div>
                 </div>

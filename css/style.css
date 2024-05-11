@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* d:/Arafat/html/CSN Extra/css/style.css */
 :root {
   --white: #FFFFFF;
@@ -142,6 +143,17 @@ select:focus {
 .btn-primary:hover {
   opacity: 0.8;
   transition: 0.3s all;
+}
+
+hr {
+  border: none;
+}
+
+hr:after {
+  content: ”……………………………………………………”;
+  letter-spacing: 10px;
+  font-size: 6px;
+  color: palegoldenrod;
 }
 
 .login {

@@ -128,11 +128,11 @@ select:focus {
     background-color: var(--primary-color) !important;
 }
 
-.bg-gray-400{
+.bg-gray-400 {
     background-color: var(--gray-400);
 }
 
-.bg-gray-600{
+.bg-gray-600 {
     background-color: var(--gray-600);
 }
 
@@ -143,6 +143,19 @@ select:focus {
 .btn-primary:hover {
     opacity: 0.8;
     transition: 0.3s all;
+}
+
+hr {
+    border: none
+        /* strip default hr styling */
+}
+
+hr:after {
+    content: ”……………………………………………………”;
+    letter-spacing: 10px;
+    font-size: 6px;
+    color: palegoldenrod
+        /* pick a color */
 }
 
 // ///////////////////
@@ -296,6 +309,6 @@ select:focus {
         height: 250px;
         border-radius: 10px;
 
-        
+
     }
 }
